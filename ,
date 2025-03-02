@@ -1,0 +1,6 @@
+cats/out/
+sampling/out/
+**/*.aux
+**/*.log
+**/*.pdf
+
