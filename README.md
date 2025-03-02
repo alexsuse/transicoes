@@ -1,0 +1,2 @@
+# transicoes
+mecanica relacional
