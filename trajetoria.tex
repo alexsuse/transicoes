@@ -1,0 +1,180 @@
+\documentclass{article}
+    % General document formatting
+    \usepackage[margin=0.7in]{geometry}
+    \usepackage[parfill]{parskip}
+    \usepackage[utf8]{inputenc}
+    
+    % Related to math
+    \usepackage{amsmath,amssymb,amsfonts,amsthm}
+
+\begin{document}
+
+\title{Mecanica relacional}
+\maketitle
+
+O campo da fisica moderna sempre se coloca como um corpo de conhecimento solido,
+que fala de fatos precisos, explica o comportamento da materia, liquida gasosa
+ou solida. A materia (ou energia) existe como presenca constante e ininterrupta
+nos modelos, sempre dada e real. Essa limitacao nos modos de existir que a fisica
+se permite estudar certamente nao e absoluta. Eu diria ainda que quando
+novas formas de existir invadem a bem-guardada \emph{natureza}, esta se
+desdobra cada vez em uma \emph{natureza} outra.
+
+Podemos tomar de exemplo diversos momentos, como por exemplo o aparecimento da
+mecanica quantica no comeco dos 1900, onde uma forma de existencia que
+desobedecia as leis conhecidas passou ao longo dos anos de abstracao absurda
+para um membro pleno do panteao de objetos existentes. Outro exemplo e a
+introducao da nocao de campo que temos hoje, de uma propriedade inerente do
+espaco, se propagando sem um meio. James Maxwell desenvolveu suas equacoes
+para um campo se propagando em um eter, ainda nao era possivel \emph{existir}
+uma onda que nao tenha um meio de propagacao na \emph{natureza}.
+
+Pois claramente se tornou possivel para um sistema quantico existir como
+\emph{natureza}. A ciencia moderna cada vez mais toma a fisica
+quantica como equivalente a \emph{natureza}. Dado que quimica e quantica
+aplicada, biologia e quimica aplicada e assim por diante, se conclui que o nosso
+modo de existencia e so o quantico agregado em tamanhos muito grandes. Ou seja,
+existiriamos da mesma forma como existem eletrons ou proteinas ou bacterias. A
+existencia e presenca constante invariante nao so com o tempo, mas tambem entre
+escalas de todo tamanho. Existir na \emph{natureza} da ciencia moderna exige
+tanta invarianca e presenca que os humanos nao alcancam.
+
+Se, como a ciencia moderna, aceitarmos que a existencia de um sistema fisico e
+invariante e sempre a mesma, logo cabe entender mais de cada "existencia" que o
+sistema existe, procurando formas de estudar o sistema cujas existencia seja
+estavel, ou seja, autoestados, orbitas estacionarios, energias
+fundamentais, todos caracterizando algum arranjo da materia que se mantem
+presente ao longo do tempo. Essa certamente nao e a unica forma de se pensar
+sobre a materia e
+energia, como discutem Isabelle Stengers e Ilya Prigogine em \emph{a nova
+alianca}. Nao so essa nao e a unica como a visao do mundo como mecanica nascida
+com newton exclui o humano, dado que nem somos estacionarios nem cabemos na
+\emph{natureza} da ciencia. Stengers e Prigogine mencionam a obra de Whitehead,
+que procurou estabelecer uma filosofia da natureza a partir de acontecimentos e
+das relacoes entre acontecimentos. Dizer que um objeto existe como quadro seria
+dizer que nas relacoes e acontecimentos entre o objeto e outrem o objeto se
+comporta como um quadro.
+
+Note que acontecimentos e relacoes nao definem necessariamente um estado.
+Seguindo a sugestao, vou considerar um mesmo problema de duas formas diferentes,
+primeiro sem qualquer nocao de estado (exceto a implicita nas interacoes) e
+entao olhando para os estados possivelmente ocupados pelo sistema
+
+
+\section{Mecanica sem estados}
+
+Se nao temos estados, podemos falar pelo menos de acontecimentos e relacoes
+entre acontecimentos. Digamos que nosso sistema interage com o universo somente
+atraves de duas interacoes, ou acontecimentos. Cada interacao e caracterizada
+por um sinal e um tempo em que a interacao ocorre e absorve ou emite uma
+quantidade $\epsilon$ de energia.i.
+
+%seguindo a maneira de integrais de trajetoria, vou considerar um sistema
+%caracterizado por duas possiveis interacoes $I^+, I^-$ que vamos atraves das
+%propriedades das interacoes mostrar que tem de se alternar.
+
+
+Tomemos entao duas interacoes,
+caracterizadas por uma dada magnitude ou variacao de energia ($\epsilon$) e uma
+direcao ($+,-$). 
+Uma interacao que ocorre no tempo $t$ sera denotada por $I^+(t)$ ou $I^-(t)$.
+Queremos garantir que duas interacoes de mesmo sinal sempre obedecem $I^+(t)
+I^+(s) = I^+(t), t<s$, ja que depois de absorver energia no instante $t$ nao
+permitimos outra interacao do mesmo tipo. Alem disso essa propriedade e
+necessaria para que haja "continuidade" em t,s.\\
+
+Uma duracao $D(t,s)$ representa um intervalo de tempo no qual a variacao de
+energia e 0. Digamos ainda que $D^+(t,s)I^+(r) = D^+(t,s)$, a duracao
+durante a qual a variacao foi nula que so pode ser seguida por ua interacao de
+sinal negativo e vice versa.\\
+
+$$
+D^-(0,T) = D^-(0,t_1) \prod_{i=1}^{2k} (-1)^i I^{(-1)^i}(t_i) D^-(t_{2k}, T)
+$$
+
+Note que as duracoes $D^+(t,s)$ representam um intervalo de tempo onde 
+$H(s)-H(t) = 0$ e apos o qual segue necessariamente uma interacao do tipo
+$I^-(r), r > s$, uma vez que
+
+$$
+D^+(0,t)I^+(s)I^-(r) = D^+(0,t) I^-(r).
+$$
+Uma trajetoria para o nosso sistema pode entao ser caracterizada somente pelos
+tempos nos quais interacoes acontecem, pela sequencia de interacoes peritidas
+que sempre se alternam entre os dois operadores.
+
+$$
+\mathcal{T}(0, t_1, \ldots, t_{2*k}, T) = D^-(0,t_1) \prod_{i=1}^k I^+(t_{2*i})
+I^-(t_{2*i-1})
+$$
+
+Definiremos entao uma media sobre todos os estados equivalentes, da seguinte
+forma:
+$$
+\sum_{k=0}^\infty \int d\mu(\mathcal{T}_k = \{t_1, \ldots, t_{2k}\}) \mathcal{F}[\mathcal{T}_k]
+$$
+$\mu$ deve ser normalizavel e podemos alem disso exigir que a energia media do
+sistema seja dada por uma constante $E$.
+
+A energia do sistema e constante a menos dos instantes ${t_i}$ onde ocorrem
+interacoes, onde a variacao e $+-\epsilon$ alternadamente.
+Cabe escrever entao:
+$$\partial_t\mathcal{H}(\mathcal{T}_k) = \epsilon \sum_{i=1}^2k (-1)^i \delta(t-t_i)
+$$
+Tomando $\mathcal{H}(0) = -\frac{\epsilon}{2}$ teremos entao:
+
+$$
+\mathcal{H}(t, {t_1,\ldots,t_{2k}}) = \epsilon \sum_{i=1}^{2k} (-1)^i \Theta(t-t_i) = \epsilon \sum_{i=1}^k (\Theta(t-t_{2*i})-\Theta(t-t_{2*i-1}))
+$$
+Ate agora estavamos sempre considerando que os tempos de cada interacao eram ordenados, mas podemos agora notar que
+
+$$
+\Theta(t-a)-\Theta(t-b) = \Theta((t-a)(b-t)), portanto \mathcal{H} = \epsilon \sum_{i=1}^k \Theta((t-t_{2*i})(t_{2*i-1}-t))
+$$
+Note que trocar um par de $t_k,t_j$ nunca muda a somatoria:
+$$
+\Theta((t-t_i)(a-t)) + \Theta((t-t_j)(b-t)) = \Theta(t-t_i)-\Theta(a-t)+\Theta(t-t_j)\Theta(b-t) = \Theta(t-t_j)-\Theta(a-t)+\Theta(t-t_j)-\Theta(b-t) = \Theta((t-t_j)(a-t)) + \Theta((t-t_i)(b-t)) 
+$$
+portanto nao precisamos mais nos preocupar com a ordenacao dos tempos de interacao. Isso nos levara a contar cada trajetoria com $k$ pares de interacoes $k!$ vezes se integrarmos sobre todos os tempos para tirar a media, portanto teriamos:
+
+$$
+E(\mathcal{H}) = \sum_k=0^\infty \int \prod_i=1^k dt_i \sum_{i=1}^k \Theta((t-t_{2*i})(t_{2*i-1}-t))
+$$
+Podemos integrar cada par de instantes separadamente:
+$$
+\int_0^T dt_1 \int_0^T dt_2 \Theta((t-t_{2})(t_1-t))= \int dt_2 t_2\Theta(t-t_2) - \int_0^T dt_1 t_1\Theta(t-t_1) = (T-t)^2/2 + (t-T)^2/2 = (T-t)^2
+$$
+Obtemos entao:
+$$
+E=\sum_k=0^\infty \frac{\epsilon}{k!} \int_0^t (T-t)^{2k} \mu_i = \sum_{k=0}^\infty \frac{\mu_k \epsilon T^{2k+1} }{k!(2k+1)}
+$$
+usando um principio de maxima entropia sobre $\mu$, teremos:
+$$
+L = -\sum_i \mu_i log(\mu_i) + \lambda_1(E-\sum_i \mu_i \mathcal{H}) + \lambda_2 (1-\sum_i \mu_i), \partial_\mu L = 0, \partial_\lambda L = 0
+$$
+Obtemos entao 
+$$
+\frac{\partial L}{\partial \lambda_1} = E - E(\mu) 
+$$
+$$
+\frac{\partial L}{\partial \lambda_2} = 1- \sum_i \mu_i
+$$
+$$
+\frac{\partial L}{\partial \mu_i} = -log(\mu_i) - 1 - \lambda_1 \frac{\epsilon T^{2i+1}}{(2i+1)i!} = 0
+$$
+
+E a solucao sera:
+$$
+\mu_i \propto exp(-\lambda_1 \epsilon \frac{T^{2*i+1}}{(2i+1)i!})
+$$
+
+Se agora computarmos a media sobre todas as 
+
+respectivamente. Se as unicas interacoes permitidas ao nosso sistema forem essas
+duas, notemos que Ambas interacoes tem de ser idempotentes. Caso $I^+(t) I^+(s)
+\ne I^+(t)$
+teriamos uma nova interacao diferente das dadas, ela poderia ser reescrita como
+$I^+(t)I^-(t_1)I^+(t_2)I^+(s) = D(0,t_2)I^+_(t_2)I^+(s)$. Tomando $t_2 = 0,
+D(0,0)I^+(0)I^+(s) = \mathcal{I}(s)$, 
+
+\end{document}
